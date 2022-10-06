@@ -10,7 +10,7 @@ app.use(express.json())
 
 app.get('/', async (req, res) => {
     res.send({
-        NOTIFICATION: "This is the backend of our site!"
+        NOTIFICATION: "This is the backend of our site, make test requests to it on Postman!"
     })
 })
 
