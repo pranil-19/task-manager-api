@@ -7,6 +7,13 @@ const app = express()
 const port = process.env.PORT
 
 app.use(express.json())
+
+app.get('/', async (req, res) => {
+    res.send({
+        NOTIFICATION: "This is the backend of our site!"
+    })
+})
+
 app.use(userRouter)
 app.use(taskRouter)
 
